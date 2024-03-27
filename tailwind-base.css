@@ -1,2 +1,9 @@
 
-body { background: red !important; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wide { @apply flex flex-row items-center gap-2; }
+    .tall { @apply flex flex-col justify-center gap-2; }
+}
